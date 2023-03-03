@@ -1,0 +1,19 @@
+public class Coche {
+    private int numPuertas;
+
+    public void incrementarNumPuertas() {
+        numPuertas++;
+    }
+
+    public int getNumPuertas() {
+        return numPuertas;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.incrementarNumPuertas();
+        System.out.println("El coche tiene " + miCoche.getNumPuertas() + " puerta(s).");
+    }
+}
