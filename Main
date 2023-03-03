@@ -1,0 +1,25 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa el primer valor: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Ingresa el segundo valor: ");
+        int num2 = scanner.nextInt();
+
+        System.out.print("Ingresa el tercer valor: ");
+        int num3 = scanner.nextInt();
+
+        int resultado = sumarTresNumeros(num1, num2, num3);
+
+        System.out.println("La suma de los tres valores es: " + resultado);
+    }
+
+    public static int sumarTresNumeros(int num1, int num2, int num3) {
+        int suma = num1 + num2 + num3;
+        return suma;
+    }
+}
